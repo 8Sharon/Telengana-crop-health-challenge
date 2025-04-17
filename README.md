@@ -54,7 +54,7 @@ It has the potential to:
 
 The primary goals of the project are:
 
-- To build a machine learning model that classifies crop health as Healthy, Moderate, or Poor.
+- To build a machine learning model that classifies crop health as Healthy, stressed, diseased or pests.
 - To leverage satellite imagery and agricultural practice data in combination.
 - To deliver actionable insights to farmers and agricultural departments.
 
@@ -68,13 +68,7 @@ The dataset consists of two major components:
    - Crop type  
    - Irrigation methods  
    - Soil properties  
-   - Fertilizer usage  
-
-2. **Sentinel-2 Time Series Data**  
-   - NDVI, EVI, and other vegetation indices  
-   - Surface temperature  
-   - Multitemporal spectral band values  
-   - Spatial resolution satellite data for crop monitoring
+   - Fertilizer usage e.t.c 
 
 ---
 
@@ -97,7 +91,7 @@ Install dependencies with:
 
 - Load CSV, GeoTIFF, or other satellite datasets using `pandas` and geospatial libraries.
 - Handle missing values appropriately (e.g., imputation or removal).
-- Encode categorical variables using **Label Encoding** or **One-Hot Encoding**.
+- Encode categorical variables using **Label Encoding** .
 - Normalize numerical variables to ensure consistent scale.
 - Align and synchronize **Sentinel-2** time series data with cultivation records using timestamps or geolocation keys.
 
@@ -142,8 +136,6 @@ Install dependencies with:
   - ✅ **Accuracy**
   - 🎯 **F1 Score**
   - 📋 **Classification Report** (Precision, Recall, F1 per class)
-- Generate a **Confusion Matrix** to visualize correct and incorrect predictions across crop health classes.
-
 ---
 
 ### 6. Visualization
